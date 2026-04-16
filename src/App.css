@@ -1,0 +1,70 @@
+/* Global presentation refinements for premium grayscale redesign */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.hero-word {
+  display: inline-block;
+}
+
+section {
+  position: relative;
+  scroll-margin-top: 7rem;
+}
+
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px -12px rgba(34, 34, 34, 0.16);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 22px 52px -16px rgba(0, 0, 0, 0.5);
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f3f3f3 25%, #ececec 50%, #f3f3f3 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+.dark .skeleton {
+  background: linear-gradient(90deg, #333333 25%, #3d3d3d 50%, #333333 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-word {
+    display: block;
+  }
+}
+
+@media print {
+  canvas {
+    display: none;
+  }
+
+  nav {
+    position: static;
+  }
+}
