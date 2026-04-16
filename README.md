@@ -3,7 +3,7 @@
 A modern, responsive, and interactive personal portfolio website built to showcase my skills, projects, and journey as a Frontend Developer and aspiring Full-Stack Developer.
 
 🌐 Live Demo:
-https://portfolio-mauve-two-80.vercel.app/
+https://portfolio-eight-swart-67.vercel.app/
 
 ---
 
