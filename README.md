@@ -67,9 +67,13 @@ npm run dev
 ## 📬 Contact
 
 Email: [himanshichauhan2006@gmail.com](mailto:himanshichauhan2006@gmail.com)
+
 LinkedIn: https://www.linkedin.com/in/himanshi-jiit/
+
 GitHub: https://github.com/JIIT-Himanshi
+
 Twitter: https://x.com/himanshi_builds
+
 Instagram: https://www.instagram.com/himanshi_151/
 
 ---
