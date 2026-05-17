@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import avatar from "../assets/avatar.jpg";
+import avatar from "../assets/profile.jpg";
 
 export default function About() {
   const sectionRef = useRef(null);
@@ -51,12 +51,12 @@ export default function About() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-7"
         >
           {/* Main Bio Card */}
           <motion.div
             variants={itemVariants}
-            className="lg:col-span-7 glass-card rounded-[2rem] p-6 sm:p-8 md:p-12 border border-light-border/30 dark:border-dark-border/40"
+            className="lg:col-span-7 glass-card rounded-[2rem] p-5 sm:p-7 md:p-9 border border-light-border/30 dark:border-dark-border/40"
           >
             <div className="flex items-center gap-2 mb-6">
               <div className="w-2 h-2 rounded-full bg-light-text dark:bg-dark-text" />
@@ -65,19 +65,19 @@ export default function About() {
               </span>
             </div>
 
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-light-text dark:text-dark-text mb-6 leading-tight display-tight">
+            <h2 className="font-display text-2xl md:text-4xl font-bold text-light-text dark:text-dark-text mb-5 leading-tight display-tight">
               Designing clean and impactful web experiences
             </h2>
 
-            <p className="text-light-text-secondary dark:text-dark-text-secondary text-base sm:text-lg leading-relaxed mb-8 max-w-3xl">
+            <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm sm:text-base leading-relaxed mb-6 max-w-3xl">
               I'm Himanshi Chauhan, a BCA student at J.P. Institute of Information Technology, Noida, with a strong focus on frontend development and UI design. I enjoy building responsive, user-friendly, and visually structured interfaces using modern web technologies.  
               <br /><br />
               My work primarily revolves around React, Next.js, Tailwind CSS, and animation tools like GSAP, where I focus on creating smooth interactions and clean layouts. Along with frontend, I am also exploring backend technologies to gradually move towards full-stack development and build more complete applications.
             </p>
 
-            <div className="flex flex-wrap gap-6 pt-6 border-t border-light-border/35 dark:border-dark-border/40">
+            <div className="flex flex-wrap gap-5 pt-5 border-t border-light-border/35 dark:border-dark-border/40">
               <div className="flex flex-col">
-                <span className="text-4xl font-display font-bold text-light-text dark:text-dark-text">
+                <span className="text-3xl font-display font-bold text-light-text dark:text-dark-text">
                   3+
                 </span>
                 <span className="text-sm text-light-text-secondary dark:text-dark-text-secondary">
@@ -86,7 +86,7 @@ export default function About() {
               </div>
               <div className="w-px bg-light-border/35 dark:bg-dark-border/40" />
               <div className="flex flex-col">
-                <span className="text-4xl font-display font-bold text-light-text dark:text-dark-text">
+                <span className="text-3xl font-display font-bold text-light-text dark:text-dark-text">
                   BCA
                 </span>
                 <span className="text-sm text-light-text-secondary dark:text-dark-text-secondary">
@@ -95,7 +95,7 @@ export default function About() {
               </div>
               <div className="w-px bg-light-border/35 dark:bg-dark-border/40" />
               <div className="flex flex-col">
-                <span className="text-4xl font-display font-bold text-light-text dark:text-dark-text">
+                <span className="text-3xl font-display font-bold text-light-text dark:text-dark-text">
                   2027
                 </span>
                 <span className="text-sm text-light-text-secondary dark:text-dark-text-secondary">
@@ -108,7 +108,7 @@ export default function About() {
           {/* Photo Card */}
           <motion.div
             variants={itemVariants}
-            className="lg:col-span-5 order-first lg:order-none glass-card rounded-[2rem] overflow-hidden border border-light-border/30 dark:border-dark-border/40 relative group min-h-[300px] sm:min-h-[400px]"
+            className="lg:col-span-5 order-first lg:order-none glass-card rounded-[2rem] overflow-hidden border border-light-border/30 dark:border-dark-border/40 relative group min-h-[240px] sm:min-h-[320px]"
           >
             <img
               src={avatar}
@@ -117,7 +117,7 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent" />
             <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
-              <div className="bg-white/80 dark:bg-dark-surface/45 backdrop-blur-xl rounded-2xl p-2.5 sm:p-3 border border-light-border/40 dark:border-dark-border/40">
+              <div className="bg-white/80 dark:bg-dark-surface/45 backdrop-blur-xl rounded-2xl p-2 sm:p-2.5 border border-light-border/40 dark:border-dark-border/40">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-light-text dark:bg-dark-text animate-pulse" />

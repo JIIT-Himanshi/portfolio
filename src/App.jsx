@@ -1,5 +1,6 @@
 import { ThemeProvider } from "./context/ThemeContext";
 import ParticleField from "./components/ParticleField";
+import CursorFollower from "./components/CursorFollower";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -13,6 +14,7 @@ function App() {
   return (
     <ThemeProvider>
       <div className="min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300">
+        <CursorFollower />
         {/* Particle Effect Background */}
         <ParticleField />
 

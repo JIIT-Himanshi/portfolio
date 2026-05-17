@@ -85,14 +85,14 @@ export default function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="py-24 md:py-32 px-6 bg-light-surface/40 dark:bg-dark-surface/25 relative"
+      className="py-20 md:py-24 px-6 bg-light-surface/40 dark:bg-dark-surface/25 relative"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
         >
           {/* Contact Info */}
           <motion.div
@@ -107,17 +107,16 @@ export default function Contact() {
                 </span>
               </div>
 
-              <h2 className="font-display text-4xl md:text-6xl font-bold text-light-text dark:text-dark-text mb-6 leading-tight display-tight">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-light-text dark:text-dark-text mb-5 leading-tight display-tight">
                 Let's start a project together
               </h2>
 
-              <p className="text-light-text-secondary dark:text-dark-text-secondary text-lg mb-10">
-                I'm currently available for freelance projects and internships.
-                Feel free to reach out.
+              <p className="text-light-text-secondary dark:text-dark-text-secondary text-base mb-8">
+                Available for freelance and collaboration opportunities.
               </p>
 
               {/* Contact Methods */}
-              <div className="space-y-4 mb-10">
+              <div className="space-y-4 mb-8">
                 <motion.a
                   href="mailto:explore.himanshu@gmail.com"
                   className="flex items-center gap-4 group"
@@ -143,29 +142,6 @@ export default function Contact() {
                   </span>
                 </motion.a>
 
-                <motion.div
-                  className="flex items-center gap-4"
-                  whileHover={{ x: 4 }}
-                >
-                  <div className="w-12 h-12 rounded-full border border-light-border/45 dark:border-dark-border/45 flex items-center justify-center">
-                    <svg
-                      className="w-5 h-5 text-light-text-secondary dark:text-dark-text-secondary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                      />
-                    </svg>
-                  </div>
-                  <span className="text-lg text-light-text dark:text-dark-text">
-                    +91 85271 46640
-                  </span>
-                </motion.div>
               </div>
 
               {/* Social Links */}
@@ -189,29 +165,6 @@ export default function Contact() {
                   </motion.a>
                 ))}
               </div>
-
-              {/* Download CV Button */}
-              <motion.a
-                href="./Resume.pdf"
-                className="pill-button inline-flex items-center gap-2 mt-8 px-6 py-3 text-light-text dark:text-dark-text font-semibold hover:bg-light-text hover:text-white dark:hover:bg-dark-text dark:hover:text-dark-bg"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Download Resume
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                  />
-                </svg>
-              </motion.a>
             </div>
           </motion.div>
 

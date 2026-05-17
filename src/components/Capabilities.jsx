@@ -47,7 +47,7 @@ export default function Capabilities() {
       ),
       title: "Frontend Development",
       description:
-        "I build responsive and visually engaging web interfaces using modern technologies like React, Next.js, and Tailwind CSS. My focus is on creating clean layouts, smooth interactions, and user-friendly experiences.",
+        "Responsive, clean interfaces built with React, Next.js, and Tailwind CSS.",
       link: "https://github.com/",
       linkText: "View My Work",
       gradient: "from-black/5 to-black/0",
@@ -70,7 +70,7 @@ export default function Capabilities() {
       ),
       title: "Problem Solving",
       description:
-        "I approach development with a problem-solving mindset, focusing on writing efficient and structured code. I continuously improve my logical thinking and understanding of core programming concepts through practice and projects.",
+        "Structured problem solving with clean, efficient, and readable code.",
       link: "#",
       linkText: "Explore More",
       gradient: "from-black/10 to-black/0",
@@ -93,7 +93,7 @@ export default function Capabilities() {
       ),
       title: "UI & Interaction Design",
       description:
-        "I focus on designing clean and intuitive user interfaces with attention to detail. Using tools like Tailwind CSS and GSAP, I create visually appealing layouts with smooth animations and interactions.",
+        "Polished UI with refined motion using Tailwind CSS and GSAP.",
       link: "#",
       linkText: "View Designs",
       gradient: "from-black/5 to-black/0",
@@ -104,14 +104,14 @@ export default function Capabilities() {
     <section
       id="capabilities"
       ref={sectionRef}
-      className="py-24 md:py-32 px-6 bg-light-surface/40 dark:bg-dark-surface/25 relative"
+      className="py-20 md:py-24 px-6 bg-light-surface/40 dark:bg-dark-surface/25 relative"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-2 h-2 rounded-full bg-light-text dark:bg-dark-text" />
@@ -128,13 +128,13 @@ export default function Capabilities() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-5"
         >
           {capabilities.map((capability) => (
             <motion.div
               key={capability.title}
               variants={itemVariants}
-              className="group glass-card rounded-[2rem] p-8 border border-light-border/30 dark:border-dark-border/40 transition-all duration-300 flex flex-col h-full relative overflow-hidden"
+              className="group glass-card rounded-[2rem] p-6 border border-light-border/30 dark:border-dark-border/40 transition-all duration-300 flex flex-col h-full relative overflow-hidden"
               whileHover={{ y: -6 }}
             >
               <div
@@ -149,7 +149,7 @@ export default function Capabilities() {
                 <h3 className="text-2xl font-display font-bold text-light-text dark:text-dark-text mb-4">
                   {capability.title}
                 </h3>
-                <p className="text-light-text-secondary dark:text-dark-text-secondary leading-relaxed mb-8 flex-grow">
+                <p className="text-light-text-secondary dark:text-dark-text-secondary leading-relaxed mb-6 flex-grow">
                   {capability.description}
                 </p>
 
@@ -180,78 +180,6 @@ export default function Capabilities() {
           ))}
         </motion.div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"
-        >
-          <motion.div
-            variants={itemVariants}
-            className="glass-card rounded-[2rem] p-8 border border-light-border/30 dark:border-dark-border/40"
-          >
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-light-surface/80 dark:bg-dark-surface/45 border border-light-border/35 dark:border-dark-border/45 flex items-center justify-center flex-shrink-0">
-                <svg
-                  className="w-6 h-6 text-light-text dark:text-dark-text"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 className="text-lg font-medium text-light-text dark:text-dark-text mb-2">
-                  Clean & Maintainable Code
-                </h4>
-                <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm">
-                  I write structured and readable code, focusing on clarity,
-                  reusability, and best practices to ensure long-term
-                  maintainability.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className="glass-card rounded-[2rem] p-8 border border-light-border/30 dark:border-dark-border/40"
-          >
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-light-surface/80 dark:bg-dark-surface/45 border border-light-border/35 dark:border-dark-border/45 flex items-center justify-center flex-shrink-0">
-                <svg
-                  className="w-6 h-6 text-light-text dark:text-dark-text"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 className="text-lg font-medium text-light-text dark:text-dark-text mb-2">
-                  Performance Focused
-                </h4>
-                <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm">
-                  I build fast and optimized interfaces with smooth animations
-                  and efficient performance to deliver a seamless user
-                  experience.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );

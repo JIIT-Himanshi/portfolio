@@ -32,10 +32,10 @@ export default function Work() {
     {
       title: "easyBasket - 10 Mins Delivery",
       description:
-        "A full-stack Blinkit-style grocery delivery app with Zustand state management, real-time cart updates, and Supabase backend for auth & database.",
+        "Blinkit-style grocery delivery app with real-time cart updates.",
       tags: ["React", "Supabase", "Zustand", "Tailwind"],
       gradient: "from-black/70 to-black/35",
-      image: "/projects/easyBasket.jfif",
+      image: "/projects/easy-basket.jfif",
       link: "https://quick-basket-woad.vercel.app/",
       github: "https://github.com/Himanshu-ABES",
       fitImage: true,
@@ -43,7 +43,7 @@ export default function Work() {
     {
       title: "Apple iPhone 15 Clone",
       description:
-        "A modern iPhone 15 inspired website featuring Three.js 3D models, GSAP animations, and stunning visual effects with interactive elements.",
+        "iPhone 15 inspired site with 3D visuals and motion.",
       tags: ["React", "Three.js", "GSAP", "Tailwind"],
       gradient: "from-black/80 to-black/45",
       image: "/projects/apple-clone.jpeg",
@@ -54,7 +54,7 @@ export default function Work() {
     {
       title: "K72 Website Clone",
       description:
-        "A fully responsive clone of K72.ca featuring smooth GSAP animations, Framer Motion effects, and modern UI/UX design across 3 pages.",
+        "Responsive K72.ca clone with smooth motion and UI polish.",
       tags: ["React", "GSAP", "Framer Motion", "Tailwind"],
       gradient: "from-black/80 to-black/35",
       image: "/projects/k72-clone.jpeg",
@@ -65,7 +65,7 @@ export default function Work() {
     {
       title: "Edvyn - Education Platform",
       description:
-        "An educational platform website with modern gradient design, GSAP animations, and multiple course pages for practical learning.",
+        "Education platform with modern gradients and motion.",
       tags: ["HTML", "CSS", "JavaScript", "GSAP"],
       gradient: "from-black/80 to-black/35",
       image: "/projects/edvyn.jpeg",
@@ -79,7 +79,7 @@ export default function Work() {
     <section
       id="work"
       ref={sectionRef}
-      className="py-24 md:py-32 px-6 relative"
+      className="py-20 md:py-24 px-6 relative"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -87,43 +87,17 @@ export default function Work() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16"
+          className="mb-10"
         >
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-2 h-2 rounded-full bg-light-text dark:bg-dark-text" />
-              <span className="text-xs sm:text-sm font-semibold text-light-text-secondary dark:text-dark-text-secondary uppercase tracking-[0.18em]">
-                Portfolio
-              </span>
-            </div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold text-light-text dark:text-dark-text display-tight">
-              Selected Work
-            </h2>
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-2 h-2 rounded-full bg-light-text dark:bg-dark-text" />
+            <span className="text-xs sm:text-sm font-semibold text-light-text-secondary dark:text-dark-text-secondary uppercase tracking-[0.18em]">
+              Portfolio
+            </span>
           </div>
-
-          <motion.a
-            href="https://github.com/Himanshu-ABES?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pill-button flex items-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-light-text dark:text-dark-text hover:bg-light-text hover:text-white dark:hover:bg-dark-text dark:hover:text-dark-bg"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            View All Repositories
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </motion.a>
+          <h2 className="font-display text-4xl md:text-6xl font-bold text-light-text dark:text-dark-text display-tight">
+            Selected Work
+          </h2>
         </motion.div>
 
         {/* Projects Grid */}
@@ -131,7 +105,7 @@ export default function Work() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {projects.map((project) => (
             <motion.article
@@ -192,11 +166,11 @@ export default function Work() {
                 </div>
 
                 {/* Project Info */}
-                <div className="p-6 flex flex-col h-[calc(100%-0px)]">
+                <div className="p-5 flex flex-col h-[calc(100%-0px)]">
                   <h3 className="text-xl font-display font-bold text-light-text dark:text-dark-text mb-2 display-tight">
                     {project.title}
                   </h3>
-                  <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm mb-5 flex-grow">
+                  <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm mb-4 flex-grow">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">

@@ -1,31 +1,24 @@
-import { useEffect, useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import gsap from "gsap";
-import personPng from "../assets/image-removebg-preview.png";
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import personPng from "../assets/hero-portrait.png";
 
 export default function Hero() {
-  const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
   const sectionRef = useRef(null);
   const { scrollY } = useScroll();
   const bgY = useTransform(scrollY, [0, 800], [0, 170]);
-  const personY = useTransform(scrollY, [0, 800], [0, -110]);
-  const contentY = useTransform(scrollY, [0, 800], [0, -45]);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".hero-word", {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.1,
-        ease: "power4.out",
-        delay: 0.3,
-      });
-    });
-
-    return () => ctx.revert();
-  }, []);
+  const personY = useTransform(scrollY, [0, 800], [0, -90]);
+  const contentY = useTransform(scrollY, [0, 800], [0, -30]);
+  const bgYSmooth = useSpring(bgY, { stiffness: 80, damping: 20, mass: 0.6 });
+  const personYSmooth = useSpring(personY, {
+    stiffness: 90,
+    damping: 22,
+    mass: 0.6,
+  });
+  const contentYSmooth = useSpring(contentY, {
+    stiffness: 90,
+    damping: 22,
+    mass: 0.6,
+  });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -54,81 +47,54 @@ export default function Hero() {
     <section
       id="home"
       ref={sectionRef}
-      className="min-h-screen flex flex-col justify-end relative overflow-hidden pt-28"
+      className="min-h-screen flex flex-col justify-start relative overflow-hidden pt-28 sm:pt-32"
     >
+      <div aria-hidden className="hero-arc hero-arc-top" />
+      <div aria-hidden className="hero-arc hero-arc-bottom" />
+
+      <div aria-hidden className="hero-corner-title">
+        Frontend Developer
+      </div>
+
       <motion.div
         aria-hidden
-        style={{ y: bgY }}
-        className="absolute inset-x-0 bottom-12 z-[1] pointer-events-none select-none"
+        style={{ y: bgYSmooth }}
+        className="hero-marquee"
       >
-        <p className="hero-back-text font-display text-[4.2rem] sm:text-[7rem] md:text-[10rem] lg:text-[13rem] font-extrabold uppercase tracking-[-0.06em] text-light-text/10 dark:text-dark-text/10 whitespace-nowrap leading-none text-center">
-          HIMANSHI
-        </p>
+        <div className="hero-marquee-track">
+          <span className="hero-marquee-text">Himanshi Chauhan</span>
+          <span className="hero-marquee-text" aria-hidden>
+            Himanshi Chauhan
+          </span>
+          <span className="hero-marquee-text" aria-hidden>
+            Himanshi Chauhan
+          </span>
+          <span className="hero-marquee-text" aria-hidden>
+            Himanshi Chauhan
+          </span>
+        </div>
       </motion.div>
 
       <motion.div
-        style={{ y: personY }}
-        className="absolute inset-x-0 bottom-0 z-[3] pointer-events-none"
+        style={{ y: personYSmooth }}
+        className="absolute inset-x-0 -bottom-6 z-[3] pointer-events-none will-change-transform"
       >
         <img
           src={personPng}
           alt="Himanshi Chauhan"
-          className="w-[21rem] sm:w-[25rem] md:w-[31rem] lg:w-[35rem] mx-auto drop-shadow-[0_24px_42px_rgba(34,34,34,0.2)]"
+          className="hero-portrait w-[26rem] sm:w-[30rem] md:w-[37rem] lg:w-[43rem] xl:w-[47rem] mx-auto drop-shadow-[0_30px_60px_rgba(34,34,34,0.24)]"
         />
       </motion.div>
 
       <motion.div
-        style={{ y: contentY }}
-        className="max-w-7xl mx-auto w-full px-6 text-left z-10 pb-20 sm:pb-24"
+        style={{ y: contentYSmooth }}
+        className="hero-cta"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex items-center mb-7"
-        >
-          <div className="glass-card inline-flex items-center gap-2 px-4 py-2 rounded-full">
-            <span className="w-2 h-2 bg-light-text dark:bg-dark-text rounded-full animate-pulse"></span>
-            <span className="text-light-text-secondary dark:text-dark-text-secondary text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">
-              Open to Internships
-            </span>
-          </div>
-        </motion.div>
-
-        <div ref={titleRef} className="overflow-hidden mb-4">
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.3rem] font-extrabold text-light-text dark:text-dark-text leading-[0.98] display-tight max-w-4xl">
-            <span className="hero-word inline-block">Frontend Developer </span>
-          </h1>
-        </div>
-
-        <div ref={subtitleRef} className="overflow-hidden mb-4">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl sm:text-2xl md:text-3xl text-light-text-secondary dark:text-dark-text-secondary font-medium"
-          >
-            Hi, I'm Himanshi Chauhan
-          </motion.p>
-        </div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-light-text-secondary dark:text-dark-text-secondary text-sm sm:text-base md:text-lg max-w-xl"
-        >
-          I design and build modern, responsive web interfaces with a strong
-          focus on clean UI and smooth user experience. Currently exploring
-          full-stack development and looking for opportunities to work on
-          real-world projects.
-        </motion.p>
-
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mt-8 sm:mt-10"
+          className="flex items-center"
         >
           <motion.a
             variants={itemVariants}
@@ -151,16 +117,6 @@ export default function Hero() {
                 d="M14 5l7 7m0 0l-7 7m7-7H3"
               />
             </svg>
-          </motion.a>
-
-          <motion.a
-            variants={itemVariants}
-            href="#contact"
-            className="flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 border border-light-text dark:border-dark-text bg-light-text text-white dark:bg-dark-text dark:text-dark-bg rounded-full font-semibold text-sm sm:text-base hover:translate-y-[-1px]"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Contact Me
           </motion.a>
         </motion.div>
       </motion.div>

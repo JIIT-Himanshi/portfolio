@@ -11,20 +11,20 @@ export default {
       colors: {
         // Premium grayscale palette
         light: {
-          bg: "#F8F8F8",
+          bg: "#F7F2E9",
           surface: "#FFFFFF",
-          text: "#222222",
-          "text-secondary": "#7B7B7B",
-          border: "#7B7B7B",
+          text: "#1F1B16",
+          "text-secondary": "#72685C",
+          border: "#BFB4A6",
           accent: "#222222",
         },
         dark: {
-          bg: "#222222",
-          surface: "#222222",
-          text: "#FFFFFF",
-          "text-secondary": "#F8F8F8",
-          border: "#7B7B7B",
-          accent: "#FFFFFF",
+          bg: "#000000",
+          surface: "#0D0D0D",
+          text: "#F5EFE6",
+          "text-secondary": "#D6CEC2",
+          border: "#3D3D3D",
+          accent: "#F5EFE6",
         },
         particle: {
           blue: "#7B7B7B",

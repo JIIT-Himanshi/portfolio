@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"; 
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
-import avatar from "../assets/avatar.jpg";
+import avatar from "../assets/profile.jpg";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -110,7 +110,7 @@ export default function Navbar() {
               {/* Theme Toggle */}
               <motion.button
                 onClick={toggleTheme}
-                className="w-10 h-10 rounded-full border border-light-border/40 dark:border-dark-border/50 text-light-text dark:text-dark-text hover:bg-light-surface/80 dark:hover:bg-dark-surface/40 transition-colors"
+                className="w-10 h-10 rounded-full border border-light-border/40 dark:border-dark-border/50 text-light-text dark:text-dark-text hover:bg-light-surface/80 dark:hover:bg-dark-surface/40 transition-colors flex items-center justify-center"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Toggle theme"
