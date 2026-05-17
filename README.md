@@ -1,59 +1,79 @@
-# Himanshu Chauhan | Personal Portfolio
+# Himanshi Chauhan | Personal Portfolio
 
-A modern, responsive, and high-performance personal portfolio website built to showcase my skills, projects, and experience as a Web Developer and Data Science student.
+A modern, responsive, and interactive personal portfolio website built to showcase my skills, projects, and journey as a Frontend Developer and aspiring Full-Stack Developer.
 
-> **Live Demo:** [https://portfolio-mauve-two-80.vercel.app/]
+🌐 Live Demo:
+https://portfolio-eight-swart-67.vercel.app/
 
+---
 
 ## ✨ Features
 
-* **Modern UI/UX:** Built with a dark theme, glassmorphism effects, and subtle animations for a premium feel.
-* **Responsive Design:** Fully adaptive layout that looks great on mobile, tablet, and desktop devices.
-* **Smooth Navigation:** Single-page application with smooth scrolling between sections.
-* **Sections:**
-    * **Hero:** Introduction and call-to-action.
-    * **About:** Bio, education, and technical skills marquee.
-    * **Capabilities:** Highlighting key services (Web Dev, Problem Solving, UI/UX).
-    * **Work:** Showcase of featured projects with links.
-    * **Contact:** A functional contact form with a simulated sending state and social media links.
-* **Performance:** Optimized build using Vite for fast load times.
+* Clean and modern user interface with a minimal design approach
+* Fully responsive layout that works across mobile, tablet, and desktop
+* Smooth scrolling and subtle animations for better user experience
+* Well-structured sections:
+
+  * Hero – Introduction and quick overview
+  * About – Background, education, and skills
+  * Capabilities – Core strengths and services
+  * Work – Projects and practical implementations
+  * Contact – Easy way to connect through form and social links
+* Optimized for performance with fast load times
+
+---
 
 ## 🛠️ Tech Stack
 
-This project is built using the following technologies:
+* **React** – Used for building reusable UI components and managing the interface efficiently
+* **Vite** – Provides fast development server and optimized production build
+* **Tailwind CSS** – Helps in creating custom and responsive designs quickly
+* **JavaScript (ES6+)** – Handles logic, interactivity, and dynamic behavior
+* **HTML5 & CSS3** – Used for structuring and styling the web pages
+* **Framer Motion & GSAP** – Used to create smooth and engaging animations
 
-* [**React**](https://react.dev/) - A JavaScript library for building user interfaces.
-* [**Vite**](https://vitejs.dev/) - A fast build tool and development server.
-* [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapid and custom design.
-* **HTML5 & CSS3** - Semantic markup and modern styling.
-* **JavaScript (ES6+)** - For interactive functionality and logic.
+---
+
+## 👩‍🎓 About Me
+
+I am a BCA student at JIIT, Noida, with a strong interest in frontend development and UI/UX design.
+
+I enjoy building responsive and user-friendly web applications using modern technologies. Currently, I am also exploring backend development to grow as a full-stack developer.
+
+---
 
 ## 🚀 Getting Started
 
-To run this project locally on your machine, follow these steps:
-
 ### Prerequisites
 
-Make sure you have [Node.js](https://nodejs.org/) (version 18 or higher) installed.
+Node.js (version 18 or above)
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd your-repo-name
-    ```
-3.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+```bash id="p7n8su"
+git clone https://github.com/JIIT-Himanshi/your-repo-name.git
+cd your-repo-name
+npm install
+```
 
-### Running the Development Server
+### Run the project
 
-Start the local development server:
-
-```bash
+```bash id="q9d1wa"
 npm run dev
+```
+
+---
+
+## 📬 Contact
+
+Email: [himanshichauhan2006@gmail.com](mailto:himanshichauhan2006@gmail.com) </br>
+LinkedIn: https://www.linkedin.com/in/himanshi-jiit/ </br>
+GitHub: https://github.com/JIIT-Himanshi </br>
+Twitter: https://x.com/himanshi_builds </br>
+Instagram: https://www.instagram.com/himanshi_151/
+
+---
+
+## 📌 Note
+
+This portfolio represents my current skills and learning progress. I will continue improving it by adding new projects and features over time.
