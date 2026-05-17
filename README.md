@@ -1,6 +1,6 @@
 # Himanshi Chauhan | Personal Portfolio
 
-A modern, responsive, and interactive personal portfolio website built to showcase my skills, projects, and journey as a Frontend Developer and aspiring Full-Stack Developer.
+A modern, responsive personal portfolio built to showcase my work, skills, and design sensibilities as a Frontend Developer.
 
 🌐 Live Demo:
 https://portfolio-eight-swart-67.vercel.app/
@@ -45,14 +45,12 @@ I enjoy building responsive and user-friendly web applications using modern tech
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-Node.js (version 18 or above)
+- Node.js (v18+ recommended)
 
 ### Installation
-
-```bash id="p7n8su"
-git clone https://github.com/JIIT-Himanshi/your-repo-name.git
-cd your-repo-name
+```bash
+git clone https://github.com/JIIT-Himanshi/portfolio.git
+cd portfolio
 npm install
 ```
 
@@ -77,3 +75,8 @@ Instagram: https://www.instagram.com/himanshi_151/
 ## 📌 Note
 
 This portfolio represents my current skills and learning progress. I will continue improving it by adding new projects and features over time.
+
+
+
+
+
