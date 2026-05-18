@@ -100,7 +100,7 @@ export default function Contact() {
             className="flex flex-col justify-between"
           >
             <div>
-              <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-2 mb-8">
                 <div className="w-2 h-2 rounded-full bg-light-text dark:bg-dark-text" />
                 <span className="text-xs sm:text-sm font-semibold text-light-text-secondary dark:text-dark-text-secondary uppercase tracking-[0.18em]">
                   Contact
@@ -112,13 +112,14 @@ export default function Contact() {
               </h2>
 
               <p className="text-light-text-secondary dark:text-dark-text-secondary text-base mb-8">
-                Available for freelance and collaboration opportunities.
+                I'm currently available for freelance projects and internships.
+                Feel free to reach out.
               </p>
 
               {/* Contact Methods */}
               <div className="space-y-4 mb-8">
                 <motion.a
-                  href="mailto:explore.himanshu@gmail.com"
+                  href="mailto:himanshichauhan2006@gmail.com"
                   className="flex items-center gap-4 group"
                   whileHover={{ x: 4 }}
                 >
@@ -141,6 +142,30 @@ export default function Contact() {
                     himanshichauhan2006@gmail.com
                   </span>
                 </motion.a>
+
+                <motion.div
+                  className="flex items-center gap-4 group"
+                  whileHover={{ x: 4 }}
+                >
+                  <div className="w-12 h-12 rounded-full border border-light-border/45 dark:border-dark-border/45 flex items-center justify-center group-hover:bg-light-surface dark:group-hover:bg-dark-surface/40 transition-colors">
+                    <svg
+                      className="w-5 h-5 text-light-text-secondary dark:text-dark-text-secondary group-hover:text-light-text dark:group-hover:text-dark-text transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-lg text-light-text dark:text-dark-text group-hover:translate-x-0.5 transition-all">
+                    +91 8527146640
+                  </span>
+                </motion.div>
 
               </div>
 
@@ -165,6 +190,28 @@ export default function Contact() {
                   </motion.a>
                 ))}
               </div>
+
+              <motion.a
+                href="./Resume.pdf"
+                className="rounded-full inline-flex items-center gap-2 mt-6 px-6 py-3 bg-black text-white dark:bg-white dark:text-black font-semibold hover:opacity-90 border border-light-border/40 dark:border-dark-border/40"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Download CV
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+              </motion.a>
             </div>
           </motion.div>
 
