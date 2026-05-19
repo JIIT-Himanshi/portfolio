@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="py-10 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <div className="glass-card rounded-[2rem] p-6 border border-light-border/30 dark:border-dark-border/40">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           
@@ -48,10 +48,17 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-light-text-secondary dark:text-dark-text-secondary">
-            © {currentYear} Himanshi Chauhan. All rights reserved.
+            © {currentYear} All rights reserved.
           </p>
         </div>
 
+        </div>
+
+        {/* Bottom decoration */}
+        <div className="mt-6 pt-4 ">
+          <p className="text-center text-xs text-light-text-secondary dark:text-dark-text-secondary/50">
+            Built with React, GSAP & Framer Motion • Designed with ❤️ in India
+          </p>
         </div>
       </div>
     </footer>

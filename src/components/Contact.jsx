@@ -92,7 +92,7 @@ export default function Contact() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-14 g:gap-16"
         >
           {/* Contact Info */}
           <motion.div
