@@ -69,9 +69,9 @@ https://portfolio-eight-swart-67.vercel.app/
 
 ## Contact
 
+- LinkedIn: https://www.linkedin.com/in/himanshi-jiit/
 - Email: himanshichauhan2006@gmail.com
 - GitHub: https://github.com/JIIT-Himanshi
-- LinkedIn: https://www.linkedin.com/in/himanshi-jiit/
 
 ## Author
 
