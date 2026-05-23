@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Bottom decoration */}
         <div className="mt-6 pt-4 ">
           <p className="text-center text-xs text-light-text-secondary dark:text-dark-text-secondary/50">
-            Built with React, GSAP & Framer Motion • Designed with ❤️ in India
+            Built with React, GSAP & Framer Motion • Designed with <br className="sm:hidden" />❤️ in India
           </p>
         </div>
       </div>
