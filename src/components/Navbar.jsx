@@ -171,7 +171,7 @@ export default function Navbar() {
 
               {/* Mobile Menu Button */}
               <motion.button
-                className="lg:hidden w-10 h-10 rounded-full border border-light-border/40 dark:border-dark-border/50 text-light-text dark:text-dark-text"
+                className="lg:hidden w-10 h-10 rounded-full border border-light-border/40 dark:border-dark-border/50 text-light-text dark:text-dark-text flex items-center justify-center"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 whileTap={{ scale: 0.9 }}
               >
