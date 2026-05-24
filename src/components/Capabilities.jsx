@@ -71,8 +71,8 @@ export default function Capabilities() {
       title: "Problem Solving",
       description:
         "Structured problem solving with clean, efficient, and readable code.",
-      link: "#",
-      linkText: "Explore More",
+      link: "https://leetcode.com/u/Himanshi-JIIT/",
+      linkText: "View Codebase",
       gradient: "from-black/10 to-black/0",
     },
     {
@@ -94,7 +94,7 @@ export default function Capabilities() {
       title: "UI & Interaction Design",
       description:
         "Polished UI with refined motion using Tailwind CSS and GSAP.",
-      link: "#",
+      link: "https://www.figma.com/@himanshijiit",
       linkText: "View Designs",
       gradient: "from-black/5 to-black/0",
     },
