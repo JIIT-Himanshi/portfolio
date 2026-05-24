@@ -35,9 +35,9 @@ export default function About() {
     { name: "Next.js", level: "Intermediate" },
     { name: "Tailwind CSS", level: "Advanced" },
     { name: "GSAP", level: "Intermediate" },
-    { name: "Python", level: "Basic" },
-    { name: "MySQL", level: "Basic" },
-    { name: "Git", level: "Intermediate" },
+    { name: "Python", level: "Intermediate" },
+    { name: "MySQL", level: "Intermediate" },
+    { name: "Git", level: "Basic" },
   ];
 
   return (
@@ -70,7 +70,7 @@ export default function About() {
             </h2>
 
             <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm sm:text-base leading-relaxed mb-6 max-w-3xl">
-              I'm Himanshi Chauhan, a BCA student at J.P. Institute of Information Technology, Noida, with a strong focus on frontend development and UI design. I enjoy building responsive, user-friendly, and visually structured interfaces using modern web technologies.  
+              I'm Himanshi Chauhan, a BCA student at Jaypee Institute of Information Technology, Noida, with a strong focus on frontend development and UI design. I enjoy building responsive, user-friendly, and visually structured interfaces using modern web technologies.  
               <br /><br />
               My work primarily revolves around React, Next.js, Tailwind CSS, and animation tools like GSAP, where I focus on creating smooth interactions and clean layouts. Along with frontend, I am also exploring backend technologies to gradually move towards full-stack development and build more complete applications.
             </p>
