@@ -182,10 +182,10 @@ export default function About() {
                 },
                 {
                   degree: "Senior Secondary Education",
-                  school: "CBSE Board",
+                  school: "A.V.N. Sr. Sec. School",
                   period: "2023 - 2024",
                   description:
-                    "Completed with a focus on core subjects and foundational computer knowledge.",
+                    "Focus on Physics, Chemistry, Mathematics and Computer Science.",
                   active: false,
                 },
               ].map((edu, index) => (
