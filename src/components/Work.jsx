@@ -30,47 +30,48 @@ export default function Work() {
 
   const projects = [
     {
-      title: "easyBasket - 10 Mins Delivery",
+      title: "Foodex India Redesign",
       description:
-        "Blinkit-style grocery delivery app with real-time cart updates.",
-      tags: ["React", "Supabase", "Zustand", "Tailwind"],
+        "Modern FMCG website redesign with product discovery, responsive UI and smooth interactions.",
+      tags: ["React", "Vite", "Tailwind", "GSAP"],
       gradient: "from-black/70 to-black/35",
-      image: "/projects/easy-basket.jfif",
-      link: "https://quick-basket-woad.vercel.app/",
-      github: "https://github.com/Himanshu-ABES",
+      image: "/projects/foodex-redesign.png",
+      link: "https://foodex-redesign.vercel.app/",
+      github: "https://github.com/JIIT-Himanshi/foodex-redesign",
       fitImage: true,
     },
     {
-      title: "Apple iPhone 15 Clone",
+      title: "APERTURE - Visual Studio",
       description:
-        "iPhone 15 inspired site with 3D visuals and motion.",
-      tags: ["React", "Three.js", "GSAP", "Tailwind"],
+        "Cinematic photography experience with editorial design, immersive motion and visual storytelling.",
+      tags: ["React", "Tailwind", "Framer Motion", "Vite"],
       gradient: "from-black/80 to-black/45",
-      image: "/projects/apple-clone.jpeg",
-      link: "https://app-iphone.netlify.app/",
-      github: "https://github.com/Himanshu-ABES",
+      image: "/projects/aperture-studio.png",
+      link: "https://aperture-visuals.vercel.app/",
+      github: "https://github.com/JIIT-Himanshi/aperture-studio",
       fitImage: true,
     },
     {
-      title: "K72 Website Clone",
+      title: "NEET Examination Analysis",
       description:
-        "Responsive K72.ca clone with smooth motion and UI polish.",
-      tags: ["React", "GSAP", "Framer Motion", "Tailwind"],
+        "Interactive analytics dashboard exploring NEET examination trends and insights across India.",
+      tags: ["Python", "Pandas", "Plotly", "Streamlit"],
       gradient: "from-black/80 to-black/35",
-      image: "/projects/k72-clone.jpeg",
-      link: "https://k27-website-clone-project.vercel.app/",
-      github: "https://github.com/Himanshu-ABES",
+      image: "/projects/neet-analysis.png",
+      link: "https://neet-analysis-dashboard.streamlit.app/",
+      github:
+        "https://github.com/JIIT-Himanshi/neet-examination-analysis-india",
       fitImage: true,
     },
     {
-      title: "Edvyn - Education Platform",
+      title: "Personal Portfolio",
       description:
-        "Education platform with modern gradients and motion.",
-      tags: ["HTML", "CSS", "JavaScript", "GSAP"],
+        "Responsive developer portfolio with glassmorphism, parallax effects and smooth motion.",
+      tags: ["React", "Tailwind", "GSAP", "Framer Motion"],
       gradient: "from-black/80 to-black/35",
-      image: "/projects/edvyn.jpeg",
-      link: "https://himanshu-abes.github.io/Edvyn/",
-      github: "https://github.com/Himanshu-ABES",
+      image: "/projects/personal-portfolio.png",
+      link: "https://portfolio-eight-swart-67.vercel.app/",
+      github: "https://github.com/JIIT-Himanshi/portfolio",
       fitImage: true,
     },
   ];
@@ -95,6 +96,7 @@ export default function Work() {
               Portfolio
             </span>
           </div>
+
           <h2 className="font-display text-4xl md:text-6xl font-bold text-light-text dark:text-dark-text display-tight">
             Selected Work
           </h2>
@@ -119,13 +121,15 @@ export default function Work() {
                 <div
                   className={`aspect-[16/10] bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
                 >
-                  {/* Browser mockup frame to keep a premium editorial presentation */}
+                  {/* Browser mockup frame */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] h-[95%] bg-white dark:bg-dark-surface rounded-xl shadow-2xl overflow-hidden group-hover:scale-105 transition-transform duration-700">
+                    
                     {/* Browser Bar */}
                     <div className="h-8 bg-light-surface dark:bg-dark-bg border-b border-light-border/35 dark:border-dark-border/40 flex items-center px-4 gap-2">
                       <div className="w-2.5 h-2.5 rounded-full bg-light-text/70 dark:bg-dark-text/70" />
                       <div className="w-2.5 h-2.5 rounded-full bg-light-text/40 dark:bg-dark-text/40" />
                       <div className="w-2.5 h-2.5 rounded-full bg-light-text/20 dark:bg-dark-text/20" />
+
                       <div className="flex-1 mx-4">
                         <div className="h-5 bg-light-border/35 dark:bg-dark-border/45 rounded-full w-2/3 mx-auto" />
                       </div>
@@ -137,16 +141,22 @@ export default function Work() {
                         <img
                           src={project.image}
                           alt={project.title}
-                          className={`w-full h-full ${project.fitImage ? "object-contain bg-white dark:bg-dark-surface" : "object-cover object-top"}`}
+                          className={`w-full h-full ${
+                            project.fitImage
+                              ? "object-contain bg-white dark:bg-dark-surface"
+                              : "object-cover object-top"
+                          }`}
                         />
                       </div>
                     ) : (
                       <div className="p-4 space-y-3">
                         <div className="h-4 bg-light-surface dark:bg-dark-bg rounded w-1/3" />
+
                         <div className="grid grid-cols-2 gap-3">
                           <div className="h-20 bg-light-surface dark:bg-dark-bg rounded" />
                           <div className="h-20 bg-light-surface dark:bg-dark-bg rounded" />
                         </div>
+
                         <div className="h-4 bg-light-surface dark:bg-dark-bg rounded w-2/3" />
                       </div>
                     )}
@@ -166,13 +176,16 @@ export default function Work() {
                 </div>
 
                 {/* Project Info */}
-                <div className="p-5 flex flex-col h-[calc(100%-0px)]">
+                <div className="p-5 flex flex-col">
                   <h3 className="text-xl font-display font-bold text-light-text dark:text-dark-text mb-2 display-tight">
                     {project.title}
                   </h3>
-                  <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm mb-4 flex-grow">
+
+                  <p className="text-light-text-secondary dark:text-dark-text-secondary text-sm mb-4">
                     {project.description}
                   </p>
+
+                  {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
@@ -184,25 +197,6 @@ export default function Work() {
                     ))}
                   </div>
 
-                  {/* Project actions requested: GitHub + Live */}
-                  <div className="flex items-center gap-3 mt-6">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-full border border-light-border/50 dark:border-dark-border/50 text-xs sm:text-sm font-semibold text-light-text dark:text-dark-text hover:bg-light-surface dark:hover:bg-dark-surface/50 transition-colors"
-                    >
-                      GitHub
-                    </a>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-full border border-light-text dark:border-dark-text bg-light-text text-white dark:bg-dark-text dark:text-dark-bg text-xs sm:text-sm font-semibold"
-                    >
-                      Live
-                    </a>
-                  </div>
                 </div>
               </div>
             </motion.article>
