@@ -48,7 +48,7 @@ export default function Capabilities() {
       title: "Frontend Development",
       description:
         "Responsive, clean interfaces built with React, Next.js, and Tailwind CSS.",
-      link: "https://github.com/",
+      link: "https://github.com/JIIT-Himanshi/",
       linkText: "View My Work",
       gradient: "from-black/5 to-black/0",
     },
