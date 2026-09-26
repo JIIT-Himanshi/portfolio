@@ -141,11 +141,7 @@ export default function Work() {
                         <img
                           src={project.image}
                           alt={project.title}
-                          className={`w-full h-full ${
-                            project.fitImage
-                              ? "object-contain bg-white dark:bg-dark-surface"
-                              : "object-cover object-top"
-                          }`}
+                          className="w-full h-full object-cover object-top"
                         />
                       </div>
                     ) : (
