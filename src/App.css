@@ -189,6 +189,11 @@ section {
 }
 
 @media (max-width: 768px) {
+  .about-bio {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
   .hero-word {
     display: block;
   }
